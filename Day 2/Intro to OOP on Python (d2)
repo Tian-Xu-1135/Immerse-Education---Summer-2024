@@ -1,0 +1,50 @@
+"""
+class Human: 
+    def __init__(self, name, surname, age): #standard definion init which means initialise 
+        self.name = name 
+        self.surname = surname #class attibute vs paremeters 
+        self.age = age 
+
+    def school(self):
+        if self.age >= 5: 
+            print(self.name, self.surname, "needs to go to school")
+        else:
+            print(self.name, self.surname, "does not need")
+
+student1 =  Human("Bob", "Bab", 20)
+
+print (student1.name)
+student1.school()"""
+
+class Car:
+    def __init__(self, colour, model, brand, age, motorpower):
+         self.colour = colour
+         self.model = model
+         self.brand = brand 
+         self.age = age 
+         self.motorpower = motorpower
+
+    def yr (self):
+        x = 2024 - self.age
+        print(x)
+    
+    def tax(self):
+        tax = 0
+        x = self.age
+        power = self.motorpower
+
+        if x <= 10:
+            tax = (power*power*30)-20
+        elif x > 10 and x < 20:
+            tax = (power*power*10) - 20
+        elif x >= 20:
+            tax = (power*power*5)-40
+
+        print("you will have to pay:",tax,"$/year")
+
+
+
+car1 = Car("red", "3", "mercedes", 3, 120)
+car1.yr()
+car1.tax()
+        

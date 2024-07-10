@@ -1,0 +1,29 @@
+def tuple():
+    logininfo = ("bob", "11:30")
+
+    print(type(logininfo))
+    
+    # can not assign new element or modify existing elements 
+    #longininfo[1] = "10:00" can not be done 
+
+
+def dictionaryex():
+    Class = {1:"bab", 
+             2:"beb", 
+             3:"bib", 
+             4:"bob", 
+             5:"bub"}
+
+    print(Class)
+
+    Class[4] =  "Joe"
+    del Class[3]
+    Class[99] = "bob"
+
+    print(Class)
+
+    print(Class[99])
+
+
+dictionaryex()
+
